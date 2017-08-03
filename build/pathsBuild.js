@@ -7,6 +7,7 @@ module.exports = {
   source: appRoot + '**/*.ts',
   html: appRoot + '**/*.html',
   css: appRoot + '**/*.css',
+  img: appRoot + 'img/**',
   json: appRoot + '**/*.json',
   woff2: appRoot + '**/*.woff2',
   output: outputRoot,

@@ -57,7 +57,7 @@
   Run the jspm install command : 
 
   ```
-  jspm instal npm:aurelia-multi-select@^1.0.0
+  jspm install aurelia-multiple-select=github:bondib/aurelia-multiple-select
   ```
 
   then update your ```main.ts``` or ```main.js``` file. 
