@@ -1,0 +1,16 @@
+<template>
+  <section class="au-animate">
+    <br><br>
+    <multiple-select items.bind="items">
+      <template replace-part="item-template-selectable">
+          test
+      </template>
+      <template replace-part="item-template-selection">
+          test
+      </template>
+
+    </multiple-select>
+    <hr />
+    <multiple-select items.bind="items"></multiple-select>
+  </section>
+</template>

@@ -1,0 +1,34 @@
+<template>
+    <require from="./multiple-select.css"></require>
+
+    <div class="ms-container">
+        <div class="ms-selectable">
+            <div class="ms-selectable-filter" if.bind="isSearchFilterEnabled">
+                <input type="text" class="form-control" placeholder="Filter..." value.bind="filterOfSelectableItems">
+            </div><br>
+            <ul class="ms-list">               
+                <li class="ms-elem-selectable" virtual-repeat.for="item of itemsToSelect" click.delegate="selectItem(item, true)">
+                    <template part="item-template-selectable" replaceable> <!-- enables user to replace item template -->
+                        <span>${getItemDisplay(item.item)}</span>
+                    </template>
+                </li>
+            </ul>
+        </div>
+        <div class="ms-selection">
+            <div class="ms-selectable-filter" if.bind="isSearchFilterEnabled">
+                <input type="text" class="form-control" placeholder="Filter..." value.bind="filterOfSelectedItems">
+            </div><br>
+             <ul class="ms-list">
+                <li class="ms-elem-selection" virtual-repeat.for="item of itemsAlreadySelected" click.delegate="selectItem(item, false)">
+                    <template part="item-template-selection" replaceable> <!-- enables user to replace item template -->
+                        <span>${getItemDisplay(item.item)}</span>
+                    </template>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <button click.delegate="removeFirst()">Test</button>
+    
+
+</template>
