@@ -7,6 +7,8 @@ export declare class MultipleSelect {
     filterOfSelectableItems: string;
     filterOfSelectedItems: string;
     displayFieldName: string;
+    selectableTitle: string;
+    selectionTitle: string;
     private _itemsInternal;
     private _isAttached;
     private _ignoreInternalSelectedItemsChanged;

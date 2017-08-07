@@ -18,6 +18,8 @@ define(["require", "exports", "aurelia-framework"], function (require, exports, 
             this.filterOfSelectableItems = "";
             this.filterOfSelectedItems = "";
             this.displayFieldName = "name";
+            this.selectableTitle = "";
+            this.selectionTitle = "";
             this._itemsInternal = [];
             this._isAttached = false;
             this._ignoreInternalSelectedItemsChanged = false;
@@ -137,6 +139,14 @@ define(["require", "exports", "aurelia-framework"], function (require, exports, 
             aurelia_framework_1.bindable,
             __metadata("design:type", String)
         ], MultipleSelect.prototype, "displayFieldName", void 0);
+        __decorate([
+            aurelia_framework_1.bindable,
+            __metadata("design:type", String)
+        ], MultipleSelect.prototype, "selectableTitle", void 0);
+        __decorate([
+            aurelia_framework_1.bindable,
+            __metadata("design:type", String)
+        ], MultipleSelect.prototype, "selectionTitle", void 0);
         __decorate([
             aurelia_framework_1.bindable,
             __metadata("design:type", Function)

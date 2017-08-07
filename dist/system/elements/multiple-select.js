@@ -26,6 +26,8 @@ System.register(["aurelia-framework"], function (exports_1, context_1) {
                     this.filterOfSelectableItems = "";
                     this.filterOfSelectedItems = "";
                     this.displayFieldName = "name";
+                    this.selectableTitle = "";
+                    this.selectionTitle = "";
                     this._itemsInternal = [];
                     this._isAttached = false;
                     this._ignoreInternalSelectedItemsChanged = false;
@@ -145,6 +147,14 @@ System.register(["aurelia-framework"], function (exports_1, context_1) {
                     aurelia_framework_1.bindable,
                     __metadata("design:type", String)
                 ], MultipleSelect.prototype, "displayFieldName", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable,
+                    __metadata("design:type", String)
+                ], MultipleSelect.prototype, "selectableTitle", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable,
+                    __metadata("design:type", String)
+                ], MultipleSelect.prototype, "selectionTitle", void 0);
                 __decorate([
                     aurelia_framework_1.bindable,
                     __metadata("design:type", Function)

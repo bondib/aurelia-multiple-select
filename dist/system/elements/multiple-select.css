@@ -91,6 +91,9 @@
   color: #aaa;
   cursor: text;
 }
+.ms-container .ms-selectable-filter{
+  margin-bottom: 5px;
+}
 /*
 .multiple-select {
   right: auto !important;
