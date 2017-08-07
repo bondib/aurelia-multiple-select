@@ -46,6 +46,22 @@ export class MultipleSelect {
     @bindable
     displayFieldName: string = "name";
 
+    /**
+      * The title of the selectable left
+      * @type {string}
+      * @memberof MultipleSelect
+       */
+    @bindable
+    selectableTitle: string = "";
+
+    /**
+      * The title of the selection left
+      * @type {string}
+      * @memberof MultipleSelect
+       */
+    @bindable
+    selectionTitle: string = "";
+
     private _itemsInternal: SelectableItem[] = [];
     private _isAttached: boolean = false;
     private _ignoreInternalSelectedItemsChanged: boolean = false;
